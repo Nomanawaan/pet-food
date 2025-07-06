@@ -184,13 +184,13 @@
                     <div class="form-group">
 
                         <label for="name">Pet's Name:</label>
-                        <input type="text" id="name" placeholder="Enter Your Name"><br>
+                        <input type="text" id="name-bd" placeholder="Enter Your Name" required> <br><br/>
 
                         <label for="name">Owner's Name:</label>
-                        <input type="text" id="name" placeholder="Enter Your Name">
+                        <input type="text" id="name-bd" placeholder="Enter Your Name" required>
 
                         <label for="type">Type of Pet:</label>
-                        <select name="type" id="type">
+                        <select name="type" id="type" required>
                             <option value="Choose">Choose the Pet</option>
                             <option value="Dog">Parrot</option>
                             <option value="Pigeon">Pigeon</option>
@@ -206,7 +206,7 @@
                         </select>
 
                         <label for="birthdaytime">Date & time:</label>
-                        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                        <input type="datetime-local" id="birthdaytime" name="birthdaytime" required>
 
                         <label for="type">Reason of Visit:</label>
                         <select name="type" id="booking-date">
@@ -261,10 +261,10 @@
                         </select>
 
                         <label for="number">Contact:</label>
-                        <input type="number" placeholder="Enter Your Number" min="1" max="10">
+                        <input type="number" placeholder="Enter Your Number" id="contact" required>
 
                         <label for="email-address">E-mail Address:</label>
-                        <input type="text" placeholder="Enter Your E-mail Address" max="25">
+                        <input type="text" placeholder="Enter Your E-mail Address" max="25" id="em-add" required>
 
                         <input type="submit" class="submit-btn">
                     </div>

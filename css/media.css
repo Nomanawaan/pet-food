@@ -3,14 +3,24 @@
 /* home page query start */
 @media screen and (max-width: 575px) {
 
-    .container {
+    /* .container {
         text-align: center;
-    }
+    } */
 
     /* hero sec query start */
     .hero-sec {
-    flex-direction: column;
-}
+        flex-direction: column;
+    }
+
+    .hero-sec-left {
+        width: var(--container-fluid);
+    }
+
+    .line {
+        width: 10vw;
+        height: 0.2vw;
+    }
+
 
 
 

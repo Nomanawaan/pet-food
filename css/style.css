@@ -19,6 +19,7 @@
     --font-lg: 2vw;
     --font-xlg: 2.4vw;
     --font-xxlg: 4vw;
+    --font-xxxlg: 5vw;
 
     /* Border Radius */
     --radius-sm: 5px;
@@ -35,6 +36,7 @@
     --container1: 10vw;
     --container2: 20vw;
     --container2-5: 25vw;
+    --container2-74: 27.4vw;
     --container2-83: 28.3vw;
     --container3: 30vw;
     --container3-4: 34vw;
@@ -664,6 +666,10 @@ img {
     border: 1px solid #cac1c1;
     padding: var(--p-1);
     border-radius: var(--radius-md);
+    transition: transform 0.3s ease;
+}
+.blog:hover{
+    transform: scale(1.05);
 }
 
 .blog img {
@@ -820,7 +826,7 @@ img {
 .sec-6-bb {
     width: var(--container);
     display: flex;
-    gap: var(--p-1);
+    gap: var(--p-2);
     margin-top: var(--p-2);
 }
 
@@ -831,7 +837,14 @@ img {
     background: var(--bg-clr-sec);
     width: var(--container2-5);
     text-align: center;
-    /* position: relative; */
+    transition: transform 0.3s ease;
+}
+
+.box-1:hover,
+.box-2:hover,
+.box-3:hover,
+.box-4:hover{
+    transform: scale(1.05);
 }
 
 .box-1 img,
@@ -839,7 +852,6 @@ img {
 .box-3 img,
 .box-4 img {
     width: var(--container-fluid);
-    transition: transform 0.4s ease-in-out;
 }
 
 .s6bb-n {
@@ -1475,13 +1487,13 @@ i.fa-regular.fa-heart {
     margin-top: var(--p-2);
 }
 .pm{
-    font-size: var(--font-md);
-    font-weight: var(--fw-sm);
+    /* font-size: var(--font-md); */
+    font-weight: var(--fw-xlg);
     color: var(--bg-clr-primary);
 }
 .cm{
-    font-size: var(--font-md);
-    font-weight: var(--fw-sm);
+    /* font-size: var(--font-md); */
+    font-weight: var(--fw-xlg);
     color: var(--bg-clr-goldenyellow);
 }
 
@@ -1523,10 +1535,8 @@ i.fa-regular.fa-heart {
     padding: var(--p-5) var(--p-0);
 }
 .s3-f-inner{
-    width: var(--container7);
-    margin-left: var(--p-6);
-    /* background: red; */
-    margin-left: var(--p-15);
+    width: var(--container);
+    margin-left: var(--p-5);
 }
 .s3-f-inner h2{
     font-size: var(--font-lg);
@@ -1543,31 +1553,83 @@ i.fa-regular.fa-heart {
     gap: var(--p-1);
 }
 .form-group label{
+    display: flex;
+    align-items: center;
+}
+.form-group label{
     font-size: var(--font-md);
     padding-right: var(--p-2);
+    padding-left: var(--p-1-5);
+    color: var(--bg-clr-secondary);
+}
+.form-group input#birthdaytime{
+    width: var(--container3);
+    height: var(--container03);
     padding-left: var(--p-1);
+    margin-left: var(--p-2-5);
+    font-size: var(--font-sm);
+    border: none;
+    border-radius: var(--radius-md);
 }
-.form-group input{
-    width: var(--container2);
-    padding-left: var(--p-2);
-    padding: var(--p-05) 0;
-    font-size: var(--font-xs);
+.form-group select#booking-date{
+    width: var(--container2-74);
+    height: var(--container03);
+    padding-left: var(--p-1);
+    font-size: var(--font-sm);
+    border-radius: var(--radius-md);
 }
-.form-group select{
-    width: var(--container2);
-    padding-left: var(--p-2);
-    padding: var(--p-05) 0;
-    font-size: var(--font-xs);
+input#name-bd{
+    width: var(--container3);
+    height: var(--container03);
+    font-size: var(--font-sm);
+    border: 1px solid var(--bg-clr-gray);
+    border-radius: var(--radius-md);
+    padding: var(--p-1);
+}
+.form-group select#type{
+    width: var(--container3);
+    height: var(--container03);
+    padding-left: var(--p-1);
+    font-size: var(--font-sm);
+    border-radius: var(--radius-md);
+}
+.form-group input#contact{
+    width: var(--container3);
+    height: var(--container03);
+    padding-left: var(--p-1);
+    font-size: var(--font-sm);
+    border-radius: var(--radius-md);
+    margin-left: var(--p-5-5);
+    border: none;
+}
+.form-group input#em-add{
+    width: var(--container2-74);
+    height: var(--container03);
+    padding-left: var(--p-1);
+    font-size: var(--font-sm);
+    border-radius: var(--radius-md);
+    border: none;
 }
 input.submit-btn {
     width: var(--container1);
-    margin-left: var(--p-2);
-    font-size: var(--font-xs);
+    margin-left: var(--p-15);
+    font-size: var(--font-sm);
     font-weight: var(--fw-sm);
+    border-radius: var(--radius-md);
+    border: none;
+    background: var(--bg-clr-goldenyellow);
+}
+input.submit-btn:hover{
+    color: var(--bg-clr-primary);
+    text-decoration: 2px underline var(--bg-clr-primary);
 }
 input.submit-btn:hover{
     background: var(--bg-clr-goldenyellow);
     color: var(--bg-clr-primary);
+    text-decoration: 2px underline var(--bg-clr-primary);
+}
+.form-group input select{
+    margin-bottom: var(--p-20);
 }
 
 /* book a doctor css end */
@@ -1810,7 +1872,7 @@ form{
     gap: var(--p-1);
     margin-top: var(--p-2);
 }
-#name, #email {
+#name-cont, #email-cont {
     width: var(--container2-5);
     height: var(--container03);
     font-size: var(--font-sm);
@@ -1818,7 +1880,7 @@ form{
     border-radius: var(--radius-md);
     padding: var(--p-1);
 }
-#subject{
+#subject-cont{
     width: var(--container5-1);
     height: var(--container03);
     font-size: var(--font-sm);
@@ -1826,7 +1888,7 @@ form{
     border-radius: var(--radius-md);
     padding: var(--p-1);
 }
-#message{
+#message-cont{
     border: 1px solid var(--bg-clr-gray);
     width: var(--container5-1);
     font-size: var(--font-sm);
@@ -1838,7 +1900,7 @@ form{
     margin-top: var(--p-1);
     background: var(--bg-clr-goldenyellow);
     border: none;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-md);
     
 }
 .cu-btn a{
