@@ -7,6 +7,20 @@
         text-align: center;
     } */
 
+    /* header top */
+    .header-top p {
+        font-size: var(--font-xlg);
+    }
+
+    /* header bottom */
+    .hbl p {
+        font-size: var(--font-lg);
+    }
+
+    .hbr ul li a {
+        font-size: var(--font-lg);
+    }
+
     /* hero sec query start */
     .hero-sec {
         flex-direction: column;
@@ -30,7 +44,8 @@
         font-size: var(--font-xbig);
     }
 
-    .sn, .ba{
+    .sn,
+    .ba {
         font-size: var(--font-lg);
     }
 
