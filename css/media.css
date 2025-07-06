@@ -21,7 +21,13 @@
         height: 0.2vw;
     }
 
+    .ptext {
+        font-size: var(--font-xxlg);
+    }
 
+    .hs-heading h1 {
+        font-size: var(--font-xbig);
+    }
 
 
 

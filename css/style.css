@@ -20,6 +20,8 @@
     --font-xlg: 2.4vw;
     --font-xxlg: 4vw;
     --font-xxxlg: 5vw;
+    --font-xbig: 6vw;
+    --font-xxbig: 6.5vw;
 
     /* Border Radius */
     --radius-sm: 5px;
