@@ -17,6 +17,10 @@
         font-size: var(--font-lg);
     }
 
+    .hbr ul li {
+        display: flex;
+    }
+
     .hbr ul li a {
         font-size: var(--font-lg);
     }
