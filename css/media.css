@@ -9,12 +9,16 @@
 
     /* header top */
     .header-top p {
-        font-size: var(--font-xlg);
+        font-size: var(--font-xxlg);
     }
 
     /* header bottom */
+    .header-bottom {
+        padding: var(--p-1) 0;
+    }
+
     .hbl p {
-        font-size: var(--font-lg);
+        font-size: var(--font-xx-lg);
     }
 
     .hbr ul li {
@@ -22,7 +26,7 @@
     }
 
     .hbr ul li a {
-        font-size: var(--font-lg);
+        font-size: var(--font-xx-lg);
     }
 
     /* hero sec query start */
