@@ -9,7 +9,7 @@
 
     /* header top */
     .header-top p {
-        font-size: var(--font-xxlg);
+        font-size: var(--font-xlg);
     }
 
     /* header bottom */
@@ -18,7 +18,7 @@
     }
 
     .hbl p {
-        font-size: var(--font-xx-lg);
+        font-size: var(--font-xlg);
     }
 
     .hbr ul li {
@@ -26,7 +26,7 @@
     }
 
     .hbr ul li a {
-        font-size: var(--font-xx-lg);
+        font-size: var(--font-xlg);
     }
 
     /* hero sec query start */
