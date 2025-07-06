@@ -1,11 +1,28 @@
+/* media query  max 575px start */
+
+/* home page query start */
+@media screen and (max-width: 575px) {
+
+    .container {
+        text-align: center;
+    }
+
+    /* hero sec query start */
+    .hero-sec {
+    flex-direction: column;
+}
 
 
 
 
 
+    /* hero sec query end */
+
+    /* home page query end */
 
 
 
 
+}
 
-
+/* media query max 575px end */
