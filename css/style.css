@@ -650,7 +650,7 @@ img {
 
 .sec-4-top p {
     font-size: var(--font-md);
-    color: var(--bg-clr-primary);
+    /* color: var(--bg-clr-primary); */
 }
 
 .sec-4-top h2 {
@@ -662,6 +662,7 @@ img {
     width: var(--container);
     display: flex;
     gap: var(--p-2);
+    margin: var(--p-2) 0;
 }
 
 .blog {
@@ -699,7 +700,7 @@ img {
 }
 
 .clr-p {
-    color: var(--bg-clr-primary);
+    color: var(--bg-clr-goldenyellow);
 }
 
 .blog-txt-b {
@@ -730,6 +731,9 @@ img {
 .blog-btn a:hover {
     color: var(--bg-clr-primary);
     text-decoration: 2px solid underline;
+}
+.admin{
+    margin-left: 5px;
 }
 
 
@@ -1101,6 +1105,15 @@ span.cont-email a:hover {
 .purple {
     color: var(--bg-clr-primary);
 }
+.ppl{
+    background: var(--bg-clr-primary);
+}
+.wht{
+    color: var(--bg-clr-secondary);
+}
+.gldn{
+    color: var(--bg-clr-goldenyellow);
+}
 
 /* hero sec css end */
 
@@ -1146,7 +1159,7 @@ span.cont-email a:hover {
 .sec-2-os {
     width: var(--container-fluid);
     background: var(--bg-clr-secondary);
-    padding: var(--p-5) var(--p-0);
+    padding: var(--p-5) 0;
 }
 
 .s2-os-inner {
@@ -1225,7 +1238,11 @@ span.cont-email a:hover {
 .sec-3-cs,
 .sec-2-cs,
 .sec-1-cu,
-.sec-2-cu {
+.sec-2-cu,
+.sec-1-shp-now,
+.sec-2-shp-now,
+.sec-3-shp-now,
+.sec-4-shp-now {
     width: var(--container-fluid);
     padding: var(--p-5) var(--p-0);
 }
@@ -1240,7 +1257,11 @@ span.cont-email a:hover {
 .s3-cs-inner,
 .s2-cs-inner,
 .s1-cu-inner,
-.s2-cu-inner {
+.s2-cu-inner,
+.s1-sn-inner,
+.s2-sn-inner,
+.s3-sn-inner,
+.s4-sn-inner {
     width: var(--container);
     margin-left: var(--p-5);
     /* background: red; */
@@ -1922,8 +1943,75 @@ form{
 
 /* contact us css end */
 
+/* shop now css start */
+.sec-2-shp-now{
+    background: var(--bg-clr-secondary);
+}
+.s2-sn-inner h2{
+    font-size: var(--font-xxlg);
+    color: var(--bg-clr-primary);
+}
+.s2-sn-inner p{
+    font-size: var(--font-sm);
+    line-height: var(--p-2-5);
+    list-style: circle;
+}
+.shop-now-ul{
+    margin-left: var(--p-1-5);
+    margin-bottom: var(--p-1);
+}
+.shop-now-ul li{
+    list-style: circle;
+    line-height: var(--p-2);
+    font-size: var(--font-sm);
+}
+.s3-sn-inner h2{
+    font-size: var(--font-xxlg);
+    color: var(--bg-clr-secondary);  
+    margin-bottom: var(--p-1); 
+}
+.s3-sn-inner ul li{
+    color: var(--bg-clr-secondary);
+}
+.s3-sn-inner p{
+    font-size: var(--font-sm);
+    line-height: var(--p-2-5);
+    color: var(--bg-clr-secondary);
+}
+.sec-4-shp-now{
+    background: var(--bg-clr-secondary);
+}
+.s4-sn-inner h2{
+    font-size: var(--font-xxlg);
+    color: var(--bg-clr-primary);
+    margin-bottom: var(--p-1); 
+}
+.sec-4-shp-now{
+    font-size: var(--font-sm);
+    line-height: var(--p-2-5);
+}
+.product-list-sn {
+    display: flex;
+    /* flex-direction: column; */
+    gap: var(--p-5);
+    margin-top: var(--p-2);
+    margin-left: var(--p-1);
+}
+.product-list-sn li{
+    list-style: circle;
+}
+.product-list-sn li a{
+    color: var(--bg-clr-goldenyellow);
+    font-size: var(--font-sm);
+    font-weight: var(--fw-sm);
+    
+}
+.product-list-sn li a:hover{
+    color: var(--bg-clr-secondary);
+    text-decoration: 2px underline var(--bg-clr-secondary);
+}
 
-
+/* shop now css end */
 
 
 /* Inner Page CSS End */
